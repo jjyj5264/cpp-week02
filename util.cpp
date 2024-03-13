@@ -1,7 +1,7 @@
 #include <cstdlib>
 #include <ctime>
 
-// Current version: v3
+// Current Version: v3
 
 void initializeSeed() {
     std::srand(std::time(0));
