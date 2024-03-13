@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Current Version: v2
+// Current Version: v3
 
 int getRandomAnswer();
 
@@ -13,7 +13,7 @@ void game() {
     int answer10 = (answer % 100) / 10;
     int answer1 = answer % 10;
 
-    std::cout << "The Answer is: " << answer100 << answer10 << answer1 << std::endl;
+    // std::cout << "The Answer is: " << answer100 << answer10 << answer1 << std::endl;
 
     while (true) {
         if (chance == 0) {
