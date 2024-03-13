@@ -1,8 +1,11 @@
 #include <iostream>
 
+// Current Version: v2
+
 int getRandomAnswer();
 
 void game() {
+    int chance = 5;
     int answer = getRandomAnswer();
 
     // stores the number in each digit.
@@ -13,8 +16,15 @@ void game() {
     std::cout << "The Answer is: " << answer100 << answer10 << answer1 << std::endl;
 
     while (true) {
+        if (chance == 0) {
+            std::cout << "You lose!";
+            break; // exit the game.
+        }
+
         int strikes = 0;
         int balls = 0;
+
+        std::cout << chance << " chances left." << std::endl;
 
         // user input
         int userGuess = 0; // guess
@@ -48,6 +58,8 @@ void game() {
         if (strikes == 3) { // when correct
             std::cout << "You win!";
             break; // exit the game.
+        } else {
+            chance--;
         }
 
         std::cout << "Strikes: " << strikes << ", Balls: " << balls << std::endl;
