@@ -3,15 +3,14 @@
 int getRandomAnswer();
 
 void game() {
-    int answer = 0; // answer
-
-    std::cout << "Enter the answer: ";
-    std::cin >> answer;
+    int answer = getRandomAnswer();
 
     // stores the number in each digit.
     int answer100 = answer / 100;
     int answer10 = (answer % 100) / 10;
     int answer1 = answer % 10;
+
+    std::cout << "The Answer is: " << answer100 << answer10 << answer1 << std::endl;
 
     while (true) {
         int strikes = 0;
