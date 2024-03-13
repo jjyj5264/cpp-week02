@@ -46,7 +46,7 @@ void game() {
 
         if (strikes == 3) { // when correct
             std::cout << "You win!";
-            break; // exit the game
+            break; // exit
         }
 
         std::cout << "Strikes: " << strikes << ", Balls: " << balls << std::endl;
