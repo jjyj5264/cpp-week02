@@ -1,5 +1,7 @@
 #include <iostream>
 
+int getRandomAnswer();
+
 void game() {
     int answer = 0; // answer
 
