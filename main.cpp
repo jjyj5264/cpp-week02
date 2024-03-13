@@ -1,7 +1,7 @@
 #include <iostream>
 
 // Bulls and Cows game.
-// Current Version: v3
+// Current version: v3
 
 void initializeSeed(); // For random results.
 void game(); // Game Logics.

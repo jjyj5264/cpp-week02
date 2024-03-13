@@ -1,6 +1,6 @@
 #include <iostream>
 
-// Current Version: v3
+// Current version: v3
 
 int getRandomAnswer();
 
